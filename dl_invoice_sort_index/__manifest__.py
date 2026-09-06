@@ -1,11 +1,11 @@
 # __manifest__.py
 {
     'name': 'DL Invoice Sort Index',
-    'version': '15.0.1.0.0',
+    'version': '15.0.1.0.1',
     'summary': 'Correctly sorts invoices by sequential number for Angola SAFT compliance',
     'description': """
-📑 DL Invoice Sort Index
-=========================
+📑 DL Invoice Sort Index (Free Community Edition)
+==================================================
 
 This module improves the sorting of invoices in Odoo, ensuring they are ordered **numerically** 
 by sequential number instead of string-based sorting.
@@ -26,6 +26,16 @@ by sequential number instead of string-based sorting.
 ---------
 - Invoices will automatically be displayed in the correct sequential order.
 - SAFT validation will succeed thanks to proper ordering.
+
+--------------------------------------------------
+⭐ Conheça as Soluções Oficiais da DIGITALUB ANGOLA:
+- 📑 Facturação Electrónica AGT Angola & SAF-T AO Oficial
+- 📦 Stock Barcode Scanner (Controlo de Inventário em Tempo Real)
+- 🏨 Digitalub Gestão Hoteleira Completa (PMS)
+- 💰 Retenção na Fonte Angola (Withholding Tax)
+- 🌐 Demonstração Online: https://demo.digitalub.ao
+- 🏢 Website Oficial: https://www.digitalub.ao
+--------------------------------------------------
 """,
     'author': 'DIGITALUB ANGOLA',
     'website': 'https://digitalub.ao',
@@ -33,8 +43,6 @@ by sequential number instead of string-based sorting.
     'depends': ['account'],
     'data': [],
     'license': 'AGPL-3',
-    'price': 12.00,
-    'currency': 'USD',
     'images': [
         'static/description/banner.png',
         'static/description/screenshot1.png',

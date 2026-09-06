@@ -2,34 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DL Invoice Sort Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DL Invoice Sort Index - Free Community Edition</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.6; margin: 0; padding: 20px; background: #ffffff; }
+        .container { max-width: 880px; margin: auto; }
+        .badge-free { display: inline-block; background: #10b981; color: #ffffff; font-weight: 700; font-size: 0.85rem; padding: 5px 14px; border-radius: 999px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        h1 { font-size: 28px; color: #0f172a; margin-top: 0; margin-bottom: 10px; }
+        h2 { font-size: 20px; color: #0f172a; margin-top: 30px; border-bottom: 2px solid #f1f5f9; padding-bottom: 8px; }
+        p.lead { font-size: 1.12rem; color: #475569; margin-bottom: 20px; }
+        .feature-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; }
+        ul { margin-left: 20px; padding-left: 0; }
+        li { margin-bottom: 8px; }
+        img.screenshot { max-width: 100%; border: 1px solid #cbd5e1; border-radius: 8px; margin: 15px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+        .promo-box { background: linear-gradient(135deg, #0a2540 0%, #0052cc 100%); color: #ffffff; border-radius: 16px; padding: 28px; margin-top: 35px; box-shadow: 0 10px 25px rgba(0,82,204,0.25); }
+        .promo-box h3 { font-size: 22px; margin-top: 0; color: #ffffff; margin-bottom: 8px; }
+        .promo-box p { color: #cbd5e1; font-size: 0.98rem; margin-bottom: 18px; }
+        .promo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 20px; }
+        .promo-item { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); border-radius: 10px; padding: 12px 16px; color: #ffffff; }
+        .promo-item strong { display: block; font-size: 0.95rem; color: #38bdf8; margin-bottom: 3px; }
+        .promo-item span { font-size: 0.8rem; color: #e2e8f0; }
+        .btn-demo { display: inline-block; background: #10b981; color: #ffffff; font-weight: 700; text-decoration: none; padding: 10px 22px; border-radius: 999px; margin-right: 10px; transition: transform 0.2s; }
+        .btn-website { display: inline-block; background: rgba(255,255,255,0.15); color: #ffffff; font-weight: 600; text-decoration: none; padding: 10px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); }
+        .footer-note { font-size: 0.88rem; color: #64748b; margin-top: 25px; text-align: center; }
+    </style>
 </head>
 <body>
-    <h1>🔢 DL Invoice Sort Index</h1>
+    <div class="container">
+        <span class="badge-free">100% Free Community Edition</span>
+        <h1>🔢 DL Invoice Sort Index</h1>
+        <p class="lead">
+            Ensures invoices are strictly ordered by their <strong>sequential numerical index</strong> rather than basic string sorting in list views and reports.
+        </p>
 
-    <p>
-        This module improves the sorting of invoices in Odoo by using the 
-        <b>sequential invoice number</b> instead of the default string-based sorting.
-    </p>
+        <div class="feature-card">
+            <h2>✨ Key Benefits</h2>
+            <ul>
+                <li>✅ <strong>Accurate Sequential Sorting:</strong> Prevents unordered lists where <code>INV/2024/10</code> appears before <code>INV/2024/2</code>.</li>
+                <li>✅ <strong>Automatic Technical Index:</strong> Adds a lightweight, high-performance <code>name_sort_index</code> integer field to <code>account.move</code>.</li>
+                <li>✅ <strong>SAFT & Audit Ready:</strong> Essential for fiscal compliance exports and audit logs where invoice chronology is strictly verified.</li>
+                <li>✅ <strong>Zero Configuration:</strong> Works immediately upon installation with zero performance overhead.</li>
+            </ul>
+        </div>
 
-    <h2>✨ Features</h2>
-    <ul>
-        <li>Fixes incorrect ordering (e.g. INV2024/10 before INV2024/2).</li>
-        <li>Adds a numeric index field <code>name_sort_index</code>.</li>
-        <li>Ensures invoices are listed and exported in proper sequential order.</li>
-    </ul>
+        <h2>📸 Visual Comparison</h2>
+        <p>Before & After installing the module:</p>
+        <img src="screenshot1.png" alt="Before installing module - string sorting" class="screenshot" />
+        <img src="screenshot2.png" alt="After installing module - correct numerical order" class="screenshot" />
 
-    <h2>📑 SAFT-AO Compliance</h2>
-    <p>
-        Proper invoice sequencing is <b>mandatory for SAFT validation</b>.  
-        With this module, your invoices are exported in order, ensuring compliance.
-    </p>
+        <!-- Cross-Promotion Lead Magnet Banner -->
+        <div class="promo-box">
+            <h3>🚀 Explore the Digitalub Angola Suite for Odoo</h3>
+            <p>Developed and maintained by <strong>DIGITALUB ANGOLA, LDA</strong> — Specialists in Odoo ERP, AGT Fiscal Certification, and Advanced Business Integrations.</p>
+            
+            <div class="promo-grid">
+                <div class="promo-item">
+                    <strong>📑 Facturação Electrónica AGT</strong>
+                    <span>Certificação oficial, assinatura RSA em tempo real e SAF-T AO.</span>
+                </div>
+                <div class="promo-item">
+                    <strong>📦 Stock Barcode Scanner</strong>
+                    <span>Operações de armazém e leitores de código de barras para Community.</span>
+                </div>
+                <div class="promo-item">
+                    <strong>💰 Withholding Tax Angola</strong>
+                    <span>Gestão automatizada de retenção na fonte em vendas e compras.</span>
+                </div>
+                <div class="promo-item">
+                    <strong>🏨 Digitalub Gestão Hoteleira</strong>
+                    <span>PMS completo com gestão de quartos, reservas, consumos e folios.</span>
+                </div>
+            </div>
 
-    <h2>📸 Screenshots</h2>
-    <p>1️⃣ Without the module → wrong order.</p>
-    <p>2️⃣ With the module → correct sequential order.</p>
+            <a href="https://demo.digitalub.ao" target="_blank" class="btn-demo">🌐 Test Live Demo</a>
+            <a href="https://www.digitalub.ao" target="_blank" class="btn-website">🏢 Visit Digitalub.ao</a>
+        </div>
 
-    <h2>👤 Author</h2>
-    <p>DIGITALUB ANGOLA, LDA 🌍</p>
+        <p class="footer-note">
+            Developed with ❤️ by <strong>DIGITALUB ANGOLA, LDA</strong> | Email: <a href="mailto:geral@digitalub.ao">geral@digitalub.ao</a>
+        </p>
+    </div>
 </body>
 </html>
