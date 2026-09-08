@@ -1,8 +1,8 @@
 # __manifest__.py
 {
-    'name': 'DL Invoice Sort Index',
-    'version': '15.0.1.0.1',
-    'summary': 'Correctly sorts invoices by sequential number for Angola SAFT compliance',
+    'name': 'Invoice Sort Index & Sequence Order',
+    'version': '15.0.1.0.2',
+    'summary': 'Fast Invoice Sorting, Chronological Sequence Organization & Angola SAFT Alignment',
     'description': """
 📑 DL Invoice Sort Index (Free Community Edition)
 ==================================================
@@ -42,7 +42,7 @@ by sequential number instead of string-based sorting.
     'category': 'Accounting',
     'depends': ['account'],
     'data': [],
-    'license': 'AGPL-3',
+    'license': 'LGPL-3',
     'images': [
         'static/description/banner.png',
         'static/description/screenshot1.png',
@@ -50,5 +50,7 @@ by sequential number instead of string-based sorting.
     ],
     'installable': True,
     'application': False,
-    'auto_install': False,
+    'auto_install': False,    'price': 0.0,
+    'currency': 'EUR',
+
 }
