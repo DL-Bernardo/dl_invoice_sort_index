@@ -1,7 +1,7 @@
 # __manifest__.py
 {
     'name': 'Invoice Sort Index & Sequence Order',
-    'version': '17.0.1.0.3',
+    'version': '17.0.1.0.4',
     'summary': 'Fast Invoice Sorting, Chronological Sequence Organization & Angola SAFT Alignment',
     'description': """
 📑 DL Invoice Sort Index
