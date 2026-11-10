@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_invoice_tree_inherit_dl_sort_index" model="ir.ui.view">
+        <field name="name">account.move.tree.inherit.dl.sort.index</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="name_sort_index" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_quotation_tree_inherit_dl_sort_index" model="ir.ui.view">
+        <field name="name">sale.order.tree.inherit.dl.sort.index</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="name_sort_index" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

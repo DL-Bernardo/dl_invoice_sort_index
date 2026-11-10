@@ -1,18 +1,31 @@
-# models/sale_order.py
+# -*- coding: utf-8 -*-
+import re
 from odoo import models, fields, api
+
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
     _order = 'name_sort_index asc, id desc'
 
-    name_sort_index = fields.Integer(string="Número (Ordem)", compute="_compute_name_sort_index", store=True)
+    name_sort_index = fields.Integer(
+        string="Número (Ordem)",
+        compute="_compute_name_sort_index",
+        store=True,
+        index=True,
+    )
 
     @api.depends('name')
     def _compute_name_sort_index(self):
         for order in self:
-            try:
-                # Extrai o número da proforma, mesmo com prefixos diferentes
-                number_part = order.name.split('/')[-1]
-                order.name_sort_index = int(number_part)
-            except (ValueError, TypeError):
-                order.name_sort_index = 0
+            val = 0
+            if order.name and order.name != '/':
+                parts = re.split(r'[/-]', order.name.strip())
+                for part in reversed(parts):
+                    digits = re.sub(r'\D', '', part)
+                    if digits:
+                        try:
+                            val = int(digits)
+                            break
+                        except ValueError:
+                            pass
+            order.name_sort_index = val
