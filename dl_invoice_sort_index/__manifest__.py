@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Invoice Sort Index & Sequence Order',
-    'version': '17.0.1.0.7',
+    'version': '15.0.1.0.7',
     'summary': 'Fast Invoice Sorting, Chronological Sequence Organization & Angola SAFT Alignment',
     'description': """
 DL Invoice Sort Index & Sequence Order
